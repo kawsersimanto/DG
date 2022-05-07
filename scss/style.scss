@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixin";
+@import "global";
+@import "responsive";
+@import "navbar";
+@import "main";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: $background-color;
+}

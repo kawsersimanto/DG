@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixin";
+
+.home {
+  height: 100vh;
+  @include flex(center);
+}
+
+.home-content {
+  @include flex(center);
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  position: relative;
+  flex: 1 1 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  // justify-content: center;
+  // text-align: center;
+  img{
+    width: 60%;
+    z-index: -1;
+    opacity: .4;
+    position: absolute;
+  }
+}
+
+.home-title {
+  padding-right: 3.8rem;
+  color: $white-color;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.dot {
+}
+
+.cursor {
+}
+
+.home-img {
+  flex: 1 1 10rem;
+  img{
+    width: 100%;
+  }
+}
+
+@include tablet-md;
