@@ -29,7 +29,6 @@
 }
 
 .home-title {
-  padding-right: 3.8rem;
   color: $white-color;
   font-size: clamp(2rem, 5vw, 4rem);
   text-transform: capitalize;
@@ -37,6 +36,7 @@
 }
 
 .dot {
+  color: $primary-color;
 }
 
 .cursor {

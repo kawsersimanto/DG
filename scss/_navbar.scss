@@ -10,7 +10,6 @@ header{
   width: 100%;
   padding: 1.5rem 10%;
   @include flex;
-  // background-color: $white-color;
   box-shadow: $shadow;
   position: fixed;
   top: 0;
@@ -41,7 +40,7 @@ header{
   position: absolute;
   display: inline-block;
   right: 5%;
-  top: 33px;
+  top: 32px;
   display: none;
   justify-content: space-between;
   flex-direction: column;
@@ -49,7 +48,7 @@ header{
 }
 
 .toggle-button.sticky{
-  top: 30px;
+  top: 28px;
 }
 
 .toggle-button.active {
