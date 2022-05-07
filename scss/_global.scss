@@ -1,0 +1,34 @@
+@import "variables";
+
+.container{
+  padding: 0 10%;
+}
+
+a{
+  color: $white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul{
+  list-style: none;
+}
+
+.btn{
+  padding: .7rem 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: $white-color;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  background-color: transparent;
+  @include transition;
+  &:hover{
+    background-color: $primary-color;
+    color: $black-color;
+  }
+}
+
