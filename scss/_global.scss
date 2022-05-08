@@ -1,22 +1,22 @@
 @import "variables";
 
-.container{
+.container {
   padding: 0 10%;
 }
 
-a{
+a {
   color: $white-color;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.btn{
-  padding: .7rem 3.5rem;
-  font-family: 'Poppins', sans-serif;
+.btn {
+  padding: 0.7rem 3.5rem;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: $white-color;
   text-transform: uppercase;
@@ -26,9 +26,27 @@ ul{
   border-radius: 10px;
   background-color: transparent;
   @include transition;
-  &:hover{
+  &:hover {
     background-color: $primary-color;
     color: $black-color;
   }
 }
 
+.title {
+  font-size: clamp(2.3rem, 5vw, 3rem);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.border-bottom{
+  border-bottom: 5px solid $primary-color;
+}
+
+.section-name{
+  display: inline-block;
+  font-size: 9rem;
+  font-weight: 700;
+  color: $background-color;
+  -webkit-text-stroke: 1px $primary-color;
+  opacity: 0.4;
+}

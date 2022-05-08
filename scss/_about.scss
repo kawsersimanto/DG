@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+@import "responsive";
+
+.about{
+  padding: 5rem 0;
+  background-color: $background-color-light;
+  position: relative;
+}
+
+.about-content {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.about-text {
+  flex: 1 1 30rem;
+  z-index: 2;
+  p{
+    margin: 4rem 0;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  &::after{
+    content: url(../img/cursor.png);
+    display: block;
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+    opacity: .1;
+    z-index: 1;
+  }
+}
+
+.about-img {
+  flex: 1 1 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img{
+    width: 70%;
+  }
+}
+
+.section-name{
+  position: absolute;
+  right: -13.18rem;
+  top: 35%;
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+
+@include align-img;
+@include x-large;
+@include hide-cursor;
