@@ -22,12 +22,3 @@ function hideLinks() {
   navLinks.classList.remove("active");
   toggleBtn.classList.remove("active");
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide( '.splide', {
-    type   : 'loop',
-    drag   : 'free',
-    perPage: 3,
-  } );
-  splide.mount();
-});

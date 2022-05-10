@@ -17,11 +17,6 @@
 .about-text {
   flex: 1 1 30rem;
   z-index: 2;
-  p{
-    margin: 4rem 0;
-    font-weight: 300;
-    line-height: 30px;
-  }
   &::after{
     content: url(../img/cursor.png);
     display: block;
