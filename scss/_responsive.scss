@@ -55,7 +55,7 @@
 
 @mixin x-large {
   @media only screen and (max-width: 1440px) {
-    .container {
+    .container, .container-2 {
       padding: 0 3%;
     }
 
@@ -104,7 +104,8 @@
 
 @mixin align-img {
   @media only screen and (max-width: 904px){
-    body{
+    body,
+    .service-title{
       text-align: center;
     }
     .about-img{
@@ -119,6 +120,14 @@
       &::after{
         display: none;
       }
+    }
+  }
+}
+
+@mixin element-center {
+  @media only screen and (max-width: 630px){
+    .service-container{
+      justify-content: center;
     }
   }
 }

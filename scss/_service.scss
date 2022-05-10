@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixin";
+@import "responsive";
+
+.service {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.container-2{
+  padding: 0 20%;
+}
+
+.service-title{
+  margin-bottom: 5rem;
+  text-align: right;
+}
+
+.service-container {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.element {
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  &:hover{
+    cursor: pointer;
+    .element-icon{
+      opacity: 1;
+    }
+  }
+}
+
+.element-icon {
+  padding: 3.5rem 4.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  opacity: .7;
+  flex: 1 1 5rem;
+  border-radius: 25px;
+  border: 2px solid $primary-color;
+  transition: all 0.3s ease 0s;
+}
+
+.single{
+  padding: 3.5rem 5rem;
+}
+
+.element-title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.name-service{
+  transform: rotate(90deg);
+  position: absolute;
+  left: -15rem;
+  top: 38%;
+}
+@include align-img;
+@include x-large;
+@include element-center;
