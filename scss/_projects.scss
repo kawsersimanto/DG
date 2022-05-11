@@ -15,8 +15,10 @@
 }
 
 .card{
-  min-width: 60%;
   position: relative;
+  img{
+    width: 100%;
+  }
 }
 
 .card-content{

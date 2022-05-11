@@ -41,7 +41,7 @@
 }
 
 .plan-title {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 600;
@@ -77,9 +77,12 @@
 .plan-advantages {
   margin: 2.5rem 0;
   text-align: left;
+  li{
+    margin: 1rem 0;
+  }
   p {
     margin-left: 0.5rem;
-    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    font-size: clamp(1rem, 4vw, 1.4rem);
     font-weight: 600;
     display: inline-block;
     text-transform: capitalize;
@@ -88,5 +91,5 @@
 
 .fa-solid.fa-check {
   color: $primary-color;
-  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  font-size: clamp(1rem, 4vw, 1.2rem);
 }
