@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixin";
+
+.sign-up{
+  @include flex;
+  flex-wrap: wrap;
+}
