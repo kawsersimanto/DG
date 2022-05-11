@@ -17,7 +17,7 @@ ul {
 .btn {
   padding: 0.7rem 3.5rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(.8rem, 4vw, 1.1rem);
   color: $white-color;
   text-transform: uppercase;
   font-weight: 600;
@@ -52,7 +52,6 @@ ul {
 }
 
 p{
-  margin: 4rem 0;
   font-weight: 300;
   line-height: 30px;
 }
