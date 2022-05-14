@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixin";
+@import "responsive";
 
 .plans {
   padding: 10rem 0;
@@ -42,26 +43,25 @@
 
 .plan-title {
   margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 4vw, 2rem);
   font-weight: 600;
-  color: $primary-color;
+  color: #68f8ee;
   text-transform: capitalize;
 }
 
 .plan-info {
-  font-size: clamp(0.8rem, 4vw, 1.2rem);
   text-transform: capitalize;
 }
 
 .price {
-  margin: 1rem;
-  width: 70%;
-  font-size: clamp(3.5rem, 5vw, 4.5rem);
-  font-weight: 600;
-  color: $primary-color;
-  border-bottom: 3px solid $white-color;
-  display: inline-block;
+  margin: 1rem 0;
+    width: 70%;
+    font-size: clamp(3.5rem, 5vw, 4rem);
+    font-weight: 600;
+    color: #68f8ee;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
 }
 
 .dollar {
@@ -70,19 +70,18 @@
 
 .plan-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .plan-advantages {
-  margin: 2.5rem 0;
+  margin-bottom: 2rem;
   text-align: left;
   li{
     margin: 1rem 0;
   }
   p {
     margin-left: 0.5rem;
-    font-size: clamp(1rem, 4vw, 1.4rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     font-weight: 600;
     display: inline-block;
     text-transform: capitalize;
@@ -93,3 +92,6 @@
   color: $primary-color;
   font-size: clamp(1rem, 4vw, 1.2rem);
 }
+
+@include adjust-cards;
+@include tablet-md;
