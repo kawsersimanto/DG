@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixin";
+@import "responsive";
 
 .trust{
   padding: 10rem 0;
@@ -23,6 +24,9 @@
     &:hover{
       cursor: pointer;
       opacity: 1;
+      color: $primary-color;
     }
   }
 }
+
+@include adjust-cards;

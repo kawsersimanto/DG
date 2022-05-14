@@ -2,9 +2,6 @@
 @import "mixin";
 @import "responsive";
 
-.sign-up{
-  height: 80vh;
-}
 
 .sign-container{
   @include flex;

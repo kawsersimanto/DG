@@ -188,6 +188,22 @@
 @mixin adjust-cards {
   @media only screen and (max-width: 375px){
 
+    .service,
+    .project,
+    .plans,
+    .trust {
+      padding: 4rem 0;
+    }
+
+    footer {
+      padding: 5rem 0 2rem 0;
+  }
+
+  .service-title {
+    margin-bottom: 3rem;
+}
+
+
     .plan-container{
       gap: 0;
     }

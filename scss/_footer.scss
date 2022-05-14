@@ -1,0 +1,129 @@
+@import "variables";
+@import "mixin";
+
+footer{
+  padding: 10rem 0 5rem 0;
+  background-color: $background-color-light;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: auto;
+  gap: 4rem;
+  justify-items: center;
+}
+
+.links{
+  margin-bottom: 1rem;
+  font-size: clamp(1.3rem, 4vw, 1.7rem);
+  text-transform: capitalize;
+}
+
+.branding {
+  width: 100%;
+}
+
+.brand {
+  width: 100%;
+  img{
+    width: 80%;
+  }
+}
+
+.socials {
+  ul{
+    margin-top: 1rem;
+    @include flex(space-evenly);
+  }
+}
+
+.fa-facebook-f,
+.fa-whatsapp,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  opacity: .5;
+  transition: all .3s ease 0s;
+  &:hover{
+    opacity: 1;
+    color: $primary-color;
+  }
+}
+
+.fa-brands.fa-whatsapp {
+}
+
+.fa-brands.fa-instagram {
+}
+
+.fa-brands.fa-twitter {
+}
+
+.fa-brands.fa-linkedin {
+}
+
+.footer-links{
+  li{
+    margin-top: .5rem;
+  }
+  a{
+    transition: all .3s ease 0s;
+    text-transform: capitalize;
+    &:hover{
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.quick-links {
+  
+}
+
+.conditions {
+
+}
+
+.newsletter {
+  input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $primary-color;
+    background-color: transparent;
+    border: 0;
+    border: 1px solid $primary-color;
+    border-radius: 10px;
+    &::placeholder{
+      color: $primary-color;
+      opacity: .5;
+    }
+    &:focus{
+      outline: 0;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 5rem;
+  text-align: center;
+  &::before{
+    content: '';
+    width: 100%;
+    margin-bottom: 3rem;
+    height: 1px;
+    display: block;
+    background-color: #c4c4c4;
+  }
+}
+
+small{
+  text-transform: uppercase;
+}
+
+@include adjust-cards;
