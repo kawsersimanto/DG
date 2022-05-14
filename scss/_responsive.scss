@@ -50,6 +50,14 @@
     .log-in{
       display: none;
     }
+
+    .sign-up-form{
+      margin: 4rem 0;
+    }
+
+    .sign-up-img{
+      text-align: center;
+    }
   }
 }
 
@@ -135,5 +143,39 @@
     .service-container{
       justify-content: center;
     }
+
+    .sign-up-form {
+      form{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "first-name"
+        "last-name"
+        "email"
+        "password";
+      }
+    }
+
+    .first-name {
+      grid-area: first-name;
+    }
+
+    .last-name {
+      grid-area: last-name;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .password {
+      grid-area: password;
+    }
+
+    .sign-up-img{
+      img{
+        width: 100%;
+      }
+    }
+
   }
 }

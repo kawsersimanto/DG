@@ -1,7 +1,88 @@
 @import "variables";
 @import "mixin";
+@import "responsive";
 
 .sign-up{
+  height: 80vh;
+}
+
+.sign-container{
   @include flex;
   flex-wrap: wrap;
 }
+
+.sign-up-form {
+  flex: 1 1 35rem;
+  form{
+    margin: 4rem 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "first-name last-name"
+    "email email"
+    "password password";
+    gap: 2.5rem;
+
+    input{
+      margin-top: .5rem;
+      width: 100%;
+      padding: 1.2rem 8rem 1.2rem 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $primary-color;
+      background-color: $background-color-light;
+      border: 0;
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      &::placeholder{
+        color: $primary-color;
+        opacity: .3;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+
+  }
+}
+
+label{
+  font-size: 1.3rem;
+  display: block;
+}
+
+.first-name {
+  grid-area: first-name;
+}
+
+.last-name {
+  grid-area: last-name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.password {
+  grid-area: password;
+}
+
+.submit-btn{
+  color: $black-color;
+  background-color: $primary-color;
+  &:hover{
+    color: $primary-color;
+    background-color: $background-color;
+  }
+}
+
+.sign-up-img {
+  flex: 1 1 35rem;
+  text-align: right;
+}
+
+@include hide-button;
+@include element-center;
